@@ -1,0 +1,7 @@
+{
+  "name": "cs-752-framework-error",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

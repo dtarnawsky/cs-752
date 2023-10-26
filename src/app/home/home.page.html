@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-item lines="none">
+      <ion-icon slot="start" name="time-outline"></ion-icon>
+      <ion-toggle (ionChange)="toggleLongEvents($event)" [checked]="longEvents">Long Events In Search</ion-toggle>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-icon slot="start" name="locate-outline"></ion-icon>
+      <ion-toggle (ionChange)="toggleLocation($event)" [checked]="locationEnabled">Show My Location</ion-toggle>
+    </ion-item>
+  </div>
+</ion-content>
